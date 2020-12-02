@@ -15,8 +15,34 @@
 </body>
 
 <?php
-$quantMetros = 2;
 
+$areaEmMetros=   28 ; //$_GET ["medida"];
+$litros = $areaEmMetros / 6;
+$lata = 18;
+$galao = 3.5;
+$valorLata = 80;
+$valorGalao = 23;
+$valorLitro1 = ($valorLata / $lata);
+$valorLitro2 = ($valorGalao / $galao);
+
+
+if (($areaEmMetros * $valorLitro1) < ($areaEmMetros * $valorLitro2)) {
+  
+   echo "Compre apenas Latas<br>";
+
+} else {
+
+//if ($areaEmMetros <= 21 && $areaEmMetros>21 ) {
+    echo " Compre apenas Galão";
+
+}
+//} else {
+
+ echo "O valor por litro é:" .number_format($valorLitro1, 2);
+  
+ echo "O valor por litro é:" .number_format($valorLitro2, 2);
 
 ?>
+
+
 </html>

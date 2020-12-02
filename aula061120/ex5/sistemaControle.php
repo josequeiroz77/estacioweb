@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exercicio 3</title>
+    <title>exercicio 5</title>
     <style>
 
         body  {
@@ -28,25 +28,17 @@
       </style>
 </head>
 <body>
-   
-    <h1>Sistema de Avaliação</h1>
 
-    <form action="http://localhost/estacioweb/aula061120/ex3/sistemaAvaliacao.php" method="post">
-        
-       <p> Informe seu nome: <input type="text" name="nome"></p>
-       <p> Nota da Av1: <input type="text" name="nota1"> </p>
-       <p> Nota da Av2: <input type="text" name="nota2"></p>
+<!--5.A biblioteca de uma universidade d eseja fazer um algoritmo que leia o nome do livro que será emprestado, o tipo de usuário (professor ou aluno) e possa imprimir um recibo conforme mostrado a seguir. Considerar que o professor tem 10 dias para devolver o livro o aluno somente 3 dias. -->
 
-       <p> <input type="submit"  value="Enviar"></p>
+$livro = $_GET ['livro'];
+$usuario = $_GET ['usuario'];
 
-
-    
-    </form>
+if ($usuario == 'professor') {
+    echo "<p> Você tem 10 dia para devolver os livros"
+} else {
+    echo "<p> Você tem 10 dia para devolver os livros </p>"
+};
 
 </body>
 </html>
-
-
-
-
-
